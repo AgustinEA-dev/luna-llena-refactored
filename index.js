@@ -2,6 +2,8 @@ const express = require("express")
 
 const app = express()
 
+const port = process.env.PORT || 3000
+
 app.set("view engine", "ejs")
 
 app.use(express.static("public"))
@@ -18,7 +20,7 @@ app.get("/contacto", (req, res) => {
     res.render("contacto")
 })
 
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log("Running on port 3000!")
 })
 
