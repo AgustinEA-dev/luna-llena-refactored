@@ -55,9 +55,8 @@
 }
 
 .products-header h2 {
-    font-size: 70px;
-    font-family: "Anton", sans-serif;
-    letter-spacing: 10px;
+    font-size: 100px;
+    font-family: "Shadows Into Light", cursive;
     text-shadow: 10px 4px 4px rgb(2, 19, 2);
     text-align: center;
     color: #FF7F00;
@@ -83,18 +82,23 @@
     .products-container::before {
         width: 80vw;
     }
+
 }
 
 @media (max-width:800px) {
     .products-container {
         width: 95vw;
+        border-radius: 75px 75px 0 0;
+
     }
 
     .products-container::before {
         width: 95vw;
+        border-radius: 75px 75px 0 0;
     }
 
     .products-header h2 {
-        font-size: 50px;
+        font-size: 45px;
+        -webkit-text-stroke: 2px #FF7F00;
     }
 }
