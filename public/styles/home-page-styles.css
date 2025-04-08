@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #182507;
+}
+
 a,
 h1 {
     font-family: "League Spartan", sans-serif;
@@ -22,6 +26,7 @@ nav {
     display: flex;
     align-items: center;
     gap: 50px
+    
 }
 
 .logo-links-container ul {
@@ -44,11 +49,12 @@ a:hover {
 }
 
 .logo-links-container img {
-    width: 90px;
+    width: 70px;
 }
 
 nav img {
     margin-right: 20px;
+    cursor: pointer;
     animation: fadeInAndSlide 1s ease-in-out;
 }
 
@@ -89,7 +95,7 @@ nav img {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.178);
+    background-color: #0000002d;
     z-index: 1;
 }
 
