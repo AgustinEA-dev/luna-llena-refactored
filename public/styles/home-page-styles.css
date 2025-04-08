@@ -103,14 +103,15 @@ nav img {
     height: 400px;
     display: flex;
     flex-direction: column;
-    margin: 190px 60px 60px 60px;
+    margin: 190px 60px 0 0;
     background: transparent;
     z-index: 2;
 }
 
 .hero-content h1 {
+    width: fit-content;
     color: #ffffff;
-    font-size: 60px;
+    font-size: 50px;
     padding: 10px;
     position: relative;
     backdrop-filter: blur(10px);
@@ -182,11 +183,15 @@ nav img {
         display: none;
     }
 
+    .hero-content {
+        margin: 30px 60px 0px 0px;
+    }
+
 }
 
 @media (max-width:550px) {
     .hero-content {
-        margin: 60px 60px 60px 60px;
+        margin: 60px 0 0 0;
     }
 
     .hero-content h1 {
@@ -198,10 +203,14 @@ nav img {
     }
 }
 
-@media (max-width:380px) {
+@media (max-width:470px) {
+
     .hero-content h1 {
         font-size: 30px;
     }
+}
+
+@media (max-width:380px) {
 
     .products-link {
         font-size: 15px;
