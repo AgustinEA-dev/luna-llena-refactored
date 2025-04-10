@@ -1,0 +1,11 @@
+<%- include("partials/head") %>
+
+    <body>
+        <%- include("partials/navbar") %>
+            <section class="new-product">
+                <form action="/products" method="POST">
+                    <label for="tipoProducto">Tipo de producto</label>
+                    <input type="text" name="tipoProducto" id="tipoProducto" placeholder="Tipo de producto">
+                </form>
+            </section>
+    </body>

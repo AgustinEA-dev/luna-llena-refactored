@@ -6,6 +6,14 @@
                 <div class="products-container">
                     <div class="products-header">
                         <h2>PRODUCTOS</h2>
+                        <ul>
+                            <% for (let product of products) {%>
+                                <li><a href="/productos/<%= product._id %>">
+                                        <%= product.sabor%>
+                                    </a>
+                                </li>
+                                <% } %>
+                        </ul>
                     </div>
                 </div>
             </section>
