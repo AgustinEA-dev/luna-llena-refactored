@@ -30,12 +30,12 @@ app.get("/productos", async (req, res) => {
     res.render("productos", { products })
 })
 
-// app.get("/productos/:id", async (req, res) => {
-//     const { id } = req.params
-//     const product = await Product.findById(id)
-//     res.render("show", { product })
-//     console.log(product)
-// })
+app.get("/productos/:id", async (req, res) => {
+    const { id } = req.params
+    const product = await Product.findById(id)
+    res.render("show", { product })
+    console.log(product)
+})
 
 app.get("/nuevo-producto", (req, res) => {
     res.render("new-product")

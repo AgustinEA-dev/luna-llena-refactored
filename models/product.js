@@ -11,7 +11,11 @@ const productSchema = new mongoose.Schema({
     },
     sabor: {
         type: String,
-        enum: ["Calabaza", "Mijo y curry", "Lentejas", "Mix-vegetales", "Remolacha"]
+        enum: ["Calabaza", "Mijo y curry", "Lentejas", "Mix-vegetales", "Remolacha","Arvejas"]
+    },
+    img: {
+        type: String,
+        required: true
     }
 
 })

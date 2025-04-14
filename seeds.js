@@ -14,27 +14,32 @@ const seedsProducts = [
     {
         tipoProducto: "Medallón",
         precio: 300,
-        sabor: "Calabaza"
+        sabor: "Calabaza",
+        img: "/imgs/products-imgs/medallon-calabaza.webp"
     },
     {
         tipoProducto: "Medallón",
         precio: 300,
-        sabor: "Mijo y curry"
+        sabor: "Mijo y curry",
+        img: "/imgs/products-imgs/medallon-mijo-curry.webp"
     },
     {
         tipoProducto: "Medallón",
         precio: 300,
-        sabor: "Lentejas"
+        sabor: "Arvejas",
+        img: "/imgs/products-imgs/medallon-arvejas.webp"
     },
     {
         tipoProducto: "Medallón",
         precio: 300,
-        sabor: "Remolacha"
+        sabor: "Remolacha",
+        img: "/imgs/products-imgs/medallon-remolacha.webp"
     },
     {
         tipoProducto: "Medallón",
         precio: 300,
-        sabor: "Mix-vegetales"
+        sabor: "Mix-vegetales",
+        img: "/imgs/products-imgs/medallon-mix.webp"
     },
 ]
 
