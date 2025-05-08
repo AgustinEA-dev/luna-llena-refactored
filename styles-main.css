@@ -22,9 +22,10 @@
     /* Tamaños */
     --font-sm: 16px;
     --font-md: 18px;
-    --font-lg: 25px;
-    --font-xl: 50px;
-    --font-xxl: 69px;
+    --font-lg: 20px;
+    --font-xl: 40px;
+    --font-xxl: 50px;
+    --font-xxxl: 60px;
 
     /* Bordes y radios */
     --radius-sm: 4px;
@@ -118,9 +119,46 @@ nav a:hover {
     gap: 30px;
 }
 
+.menu-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    min-width: 300px;
+    min-height: 200px;
+    background-color: var(--color-white);
+    padding: 1rem;
+    box-shadow: var(--shadow-btn);
+    border-radius: 0 0 0 20px;
+    z-index: 1000;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-dropdown a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0.5rem 0;
+    text-decoration: none;
+    color: var(--color-green-deep);
+}
+
+.menu-dropdown .icon svg {
+    display: inline-block;
+    vertical-align: middle;
+    height: 20px;
+    width: auto;
+}
+
+.menu-dropdown.active {
+    display: flex;
+}
+
 .icon {
     width: 25px;
     fill: var(--color-black);
+    cursor: pointer;
 }
 
 .icon:nth-child(2) {
@@ -157,9 +195,8 @@ nav a:hover {
     width: 50%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    gap: 50px;
+    padding: 0 40px;
 }
 
 .h1-p-container {
@@ -168,23 +205,21 @@ nav a:hover {
 }
 
 .hero-text h1 {
-    font-size: var(--font-xxl);
+    width: 500px;
+    font-size: var(--font-xxxl);
     background: linear-gradient(45deg, var(--color-green-dark), var(--color-green-medium), var(--color-green-deep));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-align: center;
     text-shadow: 2px 2px 4px var(--color-text-shadow);
-    padding: 20px 20px 0;
 }
 
 .hero-text p {
+    max-width: 500px;
     font-family: var(--font-alt);
     font-size: var(--font-lg);
     background: linear-gradient(45deg, var(--color-green-dark), var(--color-green-medium-dark), var(--color-green-deep));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-align: center;
-    padding: 0 20px;
 }
 
 .hero-img {
@@ -201,9 +236,11 @@ nav a:hover {
 }
 
 .products-button {
+    max-width: 200px;
     background-color: var(--color-green-medium-dark);
     color: var(--color-white);
     padding: 12px 24px;
+    margin-top: 30px;
     border: none;
     border-radius: var(--radius-md);
     font-size: var(--font-sm);
@@ -306,7 +343,7 @@ nav a:hover {
 }
 
 .about-text-container {
-    max-width: 50%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -325,6 +362,7 @@ nav a:hover {
 
 .about-text-container .icon {
     width: 100px;
+    fill: var(--color-green-medium-dark);
 }
 
 .icon-wrapper {
@@ -335,10 +373,10 @@ nav a:hover {
 .icon-wrapper::after {
     content: '';
     position: absolute;
-    bottom: -4px;
+    bottom: -10px;
     left: 50%;
     transform: translateX(-50%) scaleX(1.6) scaleY(0.3) skewX(-10deg);
-    width: 100%;
+    width: 60%;
     height: 10px;
     background: var(--color-icon-shadow);
     border-radius: 50%;
@@ -369,9 +407,7 @@ nav a:hover {
     width: 100%;
     text-align: center;
     font-size: var(--font-xxl);
-    background: linear-gradient(45deg, var(--color-green-dark), var(--color-green-medium), var(--color-green-deep));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--color-green-medium-dark);
     position: relative;
     overflow: hidden;
 }
@@ -383,5 +419,73 @@ nav a:hover {
     background-color: var(--color-orange);
     position: absolute;
     bottom: 0;
+
+}
+
+/* Mediaqueries */
+
+@media (max-width: 1220px) {
+    .img {
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 980px) {
+    nav ul {
+        display: none;
+    }
+
+    #bars {
+        display: flex;
+    }
+
+    .hero {}
+
+    .hero-content {
+        max-width: 790px;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .hero-text {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .hero-text h1 {
+        font-size: var(--font-xxl);
+        width: 100%;
+    }
+
+    .hero-img {
+        width: 100%;
+    }
+
+    .hero-img img {
+        border-radius: 100px 100px 0 0;
+    }
+
+    .about {
+        margin-top: 20px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        max-width: 790px;
+        gap: 50px;
+        padding: 50px;
+    }
+
+    .about-grid {
+        width: 100%;
+        order: 2;
+    }
+
+    .about-text-container {
+        width: 100%;
+        gap: 20px;
+        order: 1;
+    }
 
 }
