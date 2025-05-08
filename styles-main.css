@@ -26,9 +26,9 @@
     --font-xl: 40px;
     --font-xxl: 50px;
     --font-xxxl: 60px;
-
-    /* Bordes y radios */
-    --radius-sm: 4px;
+    --font-massive: 70px;
+        /* Bordes y radios */
+        --radius-sm: 4px;
     --radius-md: 8px;
     --radius-lg: 20px;
 
@@ -439,7 +439,7 @@ nav a:hover {
         display: flex;
     }
 
-    .hero {}
+    /* .hero {} */
 
     .hero-content {
         max-width: 790px;
@@ -455,8 +455,12 @@ nav a:hover {
     }
 
     .hero-text h1 {
-        font-size: var(--font-xxl);
+        font-size: var(--font-massive);
         width: 100%;
+    }
+
+    .hero-text p {
+        max-width: 300px;
     }
 
     .hero-img {
