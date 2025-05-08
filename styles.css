@@ -4,6 +4,7 @@
     --color-black: #012b0f;
     --color-green-dark: #092e00;
     --color-green-medium: #3c8f21;
+    --color-green-medium-light: #4bc268;
     --color-green-medium-dark: #316420;
     --color-green-deep: #011608;
     --color-yellow: #ffd037;
@@ -16,7 +17,7 @@
 
     /* Tipografía */
     --font-main: "Josefin Sans", sans-serif;
-    --font-alt: 'Karla', sans-serif;
+    --font-alt: "Raleway", sans-serif;
 
     /* Tamaños */
     --font-sm: 16px;
@@ -31,7 +32,7 @@
     --radius-lg: 20px;
 
     /* Sombras */
-    --shadow-btn: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-btn: 0 4px 6px rgba(0, 0, 0, 0.233);
     --shadow-grid: 0 6px 16px var(--color-shadow);
 }
 
@@ -103,6 +104,12 @@ nav ul {
 nav a {
     color: var(--color-black);
     font-size: var(--font-md);
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+nav a:hover {
+    color: var(--color-green-medium-light);
 }
 
 .cart-bars-container {
@@ -122,7 +129,7 @@ nav a {
 
 .hero {
     width: 100%;
-    height: 100dvh;
+    height: 100vh;
     margin: 0 auto;
     background-color: var(--color-yellow);
     display: flex;
@@ -194,7 +201,7 @@ nav a {
 }
 
 .products-button {
-    background: linear-gradient(45deg, var(--color-green-dark), var(--color-green-medium));
+    background-color: var(--color-green-medium-dark);
     color: var(--color-white);
     padding: 12px 24px;
     border: none;
@@ -205,6 +212,10 @@ nav a {
     box-shadow: var(--shadow-btn);
     position: relative;
     overflow: hidden;
+}
+
+.products-button:hover {
+    background: var(--color-green-medium-light);
 }
 
 .products-button::before {
@@ -307,7 +318,9 @@ nav a {
 
 .about-text {
     font-size: var(--font-lg);
+    font-family: var(--font-alt);
     color: var(--color-black);
+    padding: 20px;
 }
 
 .about-text-container .icon {
@@ -353,6 +366,22 @@ nav a {
 }
 
 .products-container h2 {
+    width: 100%;
+    text-align: center;
     font-size: var(--font-xxl);
-    color: var(--color-green-deep);
+    background: linear-gradient(45deg, var(--color-green-dark), var(--color-green-medium), var(--color-green-deep));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.products-container h2::before {
+    content: "";
+    width: 500%;
+    height: 1px;
+    background-color: var(--color-orange);
+    position: absolute;
+    bottom: 0;
+
 }
