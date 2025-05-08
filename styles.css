@@ -261,37 +261,37 @@ nav a {
 .grid-item:nth-child(1) {
     grid-column: span 2;
     border-radius: 100px 0 0 0;
-    animation: float-up 8s ease-in-out infinite;
+    /* animation: float-up 8s ease-in-out infinite; */
 }
 
 .grid-item:nth-child(2) {
     border-radius: 0 100px 0 0;
-    animation: float-left 9s ease-in-out infinite;
+    /* animation: float-left 9s ease-in-out infinite; */
 }
 
 .grid-item:nth-child(3) {
     border-radius: 0 0 100px 0;
-    animation: float-diagonal 10s ease-in-out infinite;
+    /* animation: float-diagonal 10s ease-in-out infinite; */
 }
 
 .grid-item:nth-child(4) {
     grid-column: span 2;
     grid-row: span 2;
     border-radius: 0 0 0 120px;
-    animation: float-right 7s ease-in-out infinite;
+    /* animation: float-right 7s ease-in-out infinite; */
     filter: brightness(1.1);
 }
 
 .grid-item:nth-child(5) {
     grid-row: span 2;
     border-radius: 0 60px 0 80px;
-    animation: float-right 7s ease-in-out infinite;
+    /* animation: float-right 7s ease-in-out infinite; */
 }
 
 .grid-item:nth-child(6) {
     grid-column: span 2;
     border-radius: 100px 0 80px 0;
-    animation: float-diagonal 5s ease-in-out infinite;
+    /* animation: float-diagonal 5s ease-in-out infinite; */
 }
 
 .about-text-container {
