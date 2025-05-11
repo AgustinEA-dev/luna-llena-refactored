@@ -210,7 +210,7 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding-top: 120px;
+    /* padding-top: 120px; */
 }
 
 .hero-text {
