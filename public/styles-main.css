@@ -512,10 +512,6 @@ nav a:hover {
 }
 
 @media (max-width: 590px) {
-    .hero-text {
-        height: 50%;
-    }
-
     .hero-img {
         width: 100%;
     }
