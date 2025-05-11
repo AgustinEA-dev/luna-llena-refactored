@@ -196,7 +196,7 @@ nav a:hover {
 
 .hero {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     margin: 0 auto;
     background-color: var(--color-yellow);
     display: flex;
@@ -206,11 +206,11 @@ nav a:hover {
 
 .hero-content {
     max-width: 1220px;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    /* padding-top: 120px; */
+    padding: 100px 0 0;
 }
 
 .hero-text {
