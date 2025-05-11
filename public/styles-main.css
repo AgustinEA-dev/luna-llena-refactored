@@ -42,6 +42,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: var(--font-main);
+    /* border: 1px solid red; */
 }
 
 body,
@@ -195,6 +196,8 @@ nav a:hover {
 
 
 .hero {
+    width: 100%;
+    height: 100vh;
     margin: 0 auto;
     background-color: var(--color-yellow);
     display: flex;
@@ -203,20 +206,31 @@ nav a:hover {
 }
 
 .hero-content {
-    max-width: 1000px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 120px 0 0;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    padding: 70px 0 0;
 }
 
-.hero-text {
+.hero-text,
+.hero-img {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0 40px;
+}
+
+.hero-img {
+    display: flex;
+    align-items: center;
+    max-width: 1220px;
+    background-image: url(./assets/cover-desktop-min.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 100px 100px 0 0; 
 }
 
 .h1-article-container {
@@ -236,16 +250,6 @@ nav a:hover {
     text-align: center;
 }
 
-.hero-text h2 {
-    width: 100%;
-    font-size: var(--font-h1);
-    background: linear-gradient(45deg, var(--color-green-dark), var(--color-green-medium), var(--color-green-deep));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 2px 2px 4px var(--color-text-shadow);
-    text-align: center;
-}
-
 .hero-text article {
     width: 80%;
     font-family: var(--font-alt);
@@ -256,21 +260,14 @@ nav a:hover {
     text-align: center;
 }
 
-.hero-img {
-    max-width: 1000px;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-}
-
-.img {
+/* .img {
     width: 100%;
+    height: 100%;
     border-radius: 100px 100px 0 0;
     object-fit: cover;
+    object-position: bottom;
     flex: 1;
-}
+} */
 
 .container-buttons {
     display: flex;
@@ -291,6 +288,7 @@ nav a:hover {
     box-shadow: var(--shadow-btn);
     position: relative;
     overflow: hidden;
+    border: 4px solid rgb(255, 255, 255);
 }
 
 .products-button:hover {
