@@ -24,7 +24,7 @@
     --font-md: 18px;
     --font-lg: 20px;
     --font-xl: 40px;
-    --font-h1-490-media-querie: 45px;
+    --font-h1-490-media-querie: 50px;
     --font-h1-590-media-querie: 65px;
     --font-h1: 80px;
     /* Bordes y radios */
@@ -42,7 +42,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: var(--font-main);
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 body,
@@ -497,7 +497,7 @@ nav a:hover {
     }
 
     .h1-article-container article {
-        text-align: start; 
+        text-align: start;
         width: 100%;
     }
 
@@ -528,12 +528,20 @@ nav a:hover {
         width: 100%;
     }
 
-    .about-grid{
+    .about-grid {
         width: 100%;
     }
 }
 
 @media (max-width: 490px) {
+    .hero-text {
+        padding: 10px;
+    }
+
+    .h1-article-container{
+        padding: 0 px ;
+    }
+
     .hero-text h1 {
         font-size: var(--font-h1-490-media-querie);
     }
@@ -541,4 +549,5 @@ nav a:hover {
     .hero-text article {
         font-size: var(--font-sm);
     }
+
 }
