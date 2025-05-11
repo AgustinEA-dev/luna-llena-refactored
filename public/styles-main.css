@@ -497,7 +497,8 @@ nav a:hover {
     }
 
     .h1-article-container article {
-        text-align: start;
+        text-align: start; 
+        width: 100%;
     }
 
     nav ul {
@@ -524,6 +525,11 @@ nav a:hover {
 
     .products-button {
         margin-top: 10px;
+        width: 100%;
+    }
+
+    .about-grid{
+        width: 100%;
     }
 }
 
