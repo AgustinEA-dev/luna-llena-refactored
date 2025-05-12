@@ -277,6 +277,8 @@ nav a:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
+    border-top: 3px solid var(--color-green-medium-dark);
+    padding: 10px;
 }
 
 /* .img {

@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <h3>${product.name}</h3>
           <p>${product.description}</p>
           <strong>$${product.price.toFixed(2)}</strong>
+          <button>Agregar al carrito</button>
         `;
 
                 productsGrid.appendChild(productCard);
