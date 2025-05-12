@@ -130,7 +130,7 @@ nav a:hover {
     position: absolute;
     top: 100%;
     right: 0;
-    min-width: 300px;
+    width: 100%;
     min-height: 100svh;
     background-color: var(--color-white);
     padding: 1rem;
@@ -139,6 +139,20 @@ nav a:hover {
     z-index: 1000;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.menu-dropdown-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-dropdown-header span {
+    font-size: var(--font-lg);
+}
+
+.logo-menu-dropdown {
+    width: 40px;
 }
 
 .menu-dropdown a {
@@ -505,7 +519,7 @@ nav a:hover {
 
     .h1-article-container article {
         text-align: start;
-        width: 100%;
+        width: 90%;
     }
 
     nav ul {
@@ -543,6 +557,15 @@ nav a:hover {
     .about-grid {
         width: 100%;
     }
+
+    .grid-item:nth-child(1),
+    .grid-item:nth-child(2),
+    .grid-item:nth-child(3),
+    .grid-item:nth-child(4),
+    .grid-item:nth-child(5),
+    .grid-item:nth-child(6) {
+        border-radius: 0;
+    }
 }
 
 @media (max-width: 490px) {
@@ -562,4 +585,10 @@ nav a:hover {
         font-size: var(--font-sm);
     }
 
+}
+
+@media (max-width: 330px) {
+    .hero-text h1 {
+        font-size: var(--font-xl);
+    }
 }
